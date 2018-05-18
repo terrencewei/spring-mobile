@@ -60,7 +60,7 @@ public class SiteSwitcherConfiguration {
 	}
 
 	@Configuration
-	protected static class SiteSwitcherMvcConfiguration implements WebMvcConfigurer {
+	protected static abstract class SiteSwitcherMvcConfiguration implements WebMvcConfigurer {
 
 		private final SiteSwitcherHandlerInterceptor siteSwitcherHandlerInterceptor;
 

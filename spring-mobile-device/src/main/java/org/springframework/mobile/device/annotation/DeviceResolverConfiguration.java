@@ -70,7 +70,7 @@ public class DeviceResolverConfiguration {
 
 	@Configuration
 	@Order(0)
-	protected static class DeviceResolverMvcConfiguration implements WebMvcConfigurer {
+	protected static abstract class DeviceResolverMvcConfiguration implements WebMvcConfigurer {
 
 		private DeviceResolverHandlerInterceptor deviceResolverHandlerInterceptor;
 

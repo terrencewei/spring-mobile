@@ -16,7 +16,6 @@
 
 package org.springframework.mobile.device.annotation;
 
-import org.springframework.lang.Nullable;
 import org.springframework.mobile.device.DeviceResolver;
 
 /**
@@ -32,9 +31,6 @@ import org.springframework.mobile.device.DeviceResolver;
  */
 public interface DeviceResolverConfigurer {
 
-	@Nullable
-	default DeviceResolver getDeviceResolver() {
-		return null;
-	}
+	DeviceResolver getDeviceResolver();
 
 }

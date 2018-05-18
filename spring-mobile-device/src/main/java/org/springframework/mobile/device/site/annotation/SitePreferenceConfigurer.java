@@ -16,7 +16,6 @@
 
 package org.springframework.mobile.device.site.annotation;
 
-import org.springframework.lang.Nullable;
 import org.springframework.mobile.device.site.SitePreferenceHandler;
 
 /**
@@ -32,9 +31,6 @@ import org.springframework.mobile.device.site.SitePreferenceHandler;
  */
 public interface SitePreferenceConfigurer {
 
-	@Nullable
-	default SitePreferenceHandler getSitePreferenceHandler() {
-		return null;
-	}
+	SitePreferenceHandler getSitePreferenceHandler();
 
 }

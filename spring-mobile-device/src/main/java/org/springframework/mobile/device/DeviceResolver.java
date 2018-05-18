@@ -27,8 +27,6 @@ public interface DeviceResolver {
 	/**
 	 * Resolve the device that originated the web request.
 	 */
-	default Device resolveDevice(HttpServletRequest request) {
-		return null;
-	}
+	Device resolveDevice(HttpServletRequest request);
 
 }

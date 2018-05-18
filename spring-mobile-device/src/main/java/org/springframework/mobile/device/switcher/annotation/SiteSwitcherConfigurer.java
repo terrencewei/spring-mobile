@@ -16,7 +16,6 @@
 
 package org.springframework.mobile.device.switcher.annotation;
 
-import org.springframework.lang.Nullable;
 import org.springframework.mobile.device.switcher.SiteSwitcherHandler;
 
 /**
@@ -32,9 +31,6 @@ import org.springframework.mobile.device.switcher.SiteSwitcherHandler;
  */
 public interface SiteSwitcherConfigurer {
 
-	@Nullable
-	default SiteSwitcherHandler getSiteSwitcherHandler() {
-		return null;
-	}
+	SiteSwitcherHandler getSiteSwitcherHandler();
 
 }
